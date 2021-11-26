@@ -1,0 +1,180 @@
+/*Reseta os valores padrões*/
+*{
+   padding: 0%;
+   margin: 0;
+}
+/*Criando uma barra de navegação na horizontal*/
+.barra-de-navegacao{
+   background-color: rgb(23, 117, 117);
+   width: 100%;
+   height: 50px;
+   box-shadow: 3px 3px 3px -3px black;
+   position:fixed;
+   z-index: 1;
+}
+.barra-de-navegacao ul{
+   list-style: none;
+   
+}
+.barra-de-navegacao ul li{
+   width: 150px;
+   float: left;
+}
+
+.barra-de-navegacao a{
+   padding: 15px;
+   display: block;
+   color: black;
+   text-align: center;
+}
+label[for="bt_menu"]{
+   padding: 5px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+   text-align: center;
+   cursor: pointer;
+   width: 50px;
+   height: 50px;
+   display: none;
+   background-color: rgb(23, 117, 117);
+   box-shadow: 3px 3px 3px -3px black;
+}
+
+#bt_menu{
+   display: none;
+}
+
+.imagem-principal{
+ float: right;
+ padding-top: 3%;
+ padding-right: 8% ;
+ 
+}
+
+p{
+   margin: 15px;
+}
+
+.nome1{
+  
+   padding-top: 15%;
+   padding-left: 6%;
+   font-size:40px;
+   font-style: italic;
+}
+
+.nome2{
+   border-top:2px solid;
+   width:50% ;
+}
+
+.quem-eu-sou{
+   position: relative;
+   left: 25%;
+   width:50%;
+   margin:15% 0% 15% 0%;
+   padding: 220px 0px 20px 0px;
+   font-size: 20px;
+   text-align: center;
+}
+
+.experiencia{
+   position: relative;
+   left: 23%;
+   margin:10% 0% 15% 0%;
+   width: 40%;
+   font-size: 20px;
+   padding: 60px 100px 80px 100px;
+   border-style: groove;
+   border-color:rgb(10, 85, 85) ;
+   text-align: center;
+}
+.educacao{
+   position: relative;
+   left: 23%;
+   margin: 10% 0% 15% 0;
+   width: 40%;
+   font-size: 18px;
+   padding: 60px 100px 80px 100px;
+   border-style: groove;
+   border-color:rgb(10, 85, 85) ;
+   text-align: center;
+}
+.contatos{
+   position: relative;
+   left: 23%;
+   width: 40%;
+   margin: 10% 0 5% 0;
+   font-size: 18px;
+   padding: 60px 100px 10px 100px;
+   border-style: groove;
+   border-color:rgb(10, 85, 85) ;
+   text-align: center;
+}
+.img-contatos{
+   width: 50px;
+}
+a{
+   text-decoration: none;
+}
+.titulo{
+   padding-bottom: 50px;
+   font-size: 35px;
+}
+.rodape{
+   text-align: center;
+   margin: 5% 0% 2%;
+}
+
+@media(max-width:1100px){
+   
+   label[for="bt_menu"]{
+      display: block;
+   }
+   .barra-de-navegacao{
+      margin-top: 5px;
+      margin-left: -500px;
+      transition: all .4s;
+      background-color: white;
+      box-shadow: 0px 0px;  
+      position: absolute;
+   }
+   #bt_menu:checked~.barra-de-navegacao{
+      margin-left:0;
+   }
+   .barra-de-navegacao ul li{
+      float: none;
+      background-color: rgb(23, 117, 117);
+   }
+   .imagem-principal{
+      display: none;
+   }
+   .nome1{
+      margin-top: 10%;
+   }
+  .nome2{
+     width: 100%;
+  }
+  .quem-eu-sou{
+     width: 100%;
+     position: static;
+     margin: 50% 0 0 0;
+     padding: 20px 0px 20px 0px;
+  }
+  .experiencia{
+     width: 100%;
+     position: static;
+     padding: 20px 0px 20px 0px;
+  }
+  .educacao{
+     width: 100%;
+     position: static;
+     padding: 20px 0px 20px 0px;
+  }
+  .contatos{
+     width: 100%;
+     position: static;
+     padding: 20px 0px 0px 0px;
+  }
+  
+}
